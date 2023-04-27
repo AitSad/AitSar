@@ -20,7 +20,7 @@ use AitSar::table::{hash};
 ```
 
 ## Explanation
-Sir Nisar made claims on 6 April, in an online class, that Binary Search algorithm, dividing array by half is the fastest algorithm, a backed statement from Cambridge University. Aitzaz immediately pointed out this as wrong; Sir Nisar told that he should create a book, with this implementation of my own discovery, yet he was aware that these fast algorithms already exist. So he created this! 
+Sir Nisar made claims on 6 April, in an online class, that Binary Search algorithm, dividing array by half is the fastest algorithm, a backed statement from Cambridge University. Aitzaz immediately pointed out this as wrong; Sir Nisar told that he should create a book, with this implementation of his own discovery, yet he was aware that these fast algorithms already exist. So he created this! 
 
 ```
 Ternary search algorithm: It is a divide and conquer algorithm used to find the maximum or minimum value in a unimodal function. It is faster than binary 
