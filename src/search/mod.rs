@@ -1,4 +1,4 @@
-ternary.rs
-interpolation.rs
-exponential.rs
-fibonacci.rs
+ternary.rs;
+interpolation.rs;
+exponential.rs;
+fibonacci.rs;
