@@ -1,0 +1,23 @@
+name: Automated Release Notes
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  generate-release-notes:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with:
+        ref: ${{ github.ref }}
+    - name: Generate release notes
+      id: release-notes
+      uses: appleboy/gh-action-auto-release-notes@v1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Comment release notes
+      uses: unsplash/comment-release@v1.1.1
+      with:
+        message: ${{ steps.release-notes.outputs.notes }}
