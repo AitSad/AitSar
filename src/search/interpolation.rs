@@ -3,7 +3,7 @@ fn interpolation_search(arr: &[i32], target: i32) -> Option<usize> {
     let mut right = arr.len() - 1;
     
     while left <= right && target >= arr[left] && target <= arr[right] {
-        let pos = left + ((target - arr[left]) * (right - left) as i32) / (arr[right] - arr[left]);
+        let pos = left + ((target - arr[left]) * (right - left) as usize) / (arr[right] - arr[left]);
         
         if arr[pos] == target {
             return Some(pos);
