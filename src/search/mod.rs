@@ -1,4 +1,4 @@
-ternary.rs;
-interpolation.rs;
-exponential.rs;
-fibonacci.rs;
+pub mod ternary;
+pub mod interpolation;
+pub mod exponential;
+pub mod fibonacci;
