@@ -1,1 +1,1 @@
-hash.rs;
+pub mod hash
