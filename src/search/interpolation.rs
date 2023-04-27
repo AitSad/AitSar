@@ -1,18 +1,20 @@
 fn interpolation_search(arr: &[i32], target: i32) -> Option<usize> {
-    let mut left = 0;
-    let mut right = arr.len() - 1;
-    
-    while left <= right && target >= arr[left] && target <= arr[right] {
-        let pos = left + ((target - arr[left]) * (right - left) as usize) / (arr[right] - arr[left]);
-        
+    let mut lo = 0;
+    let mut hi = arr.len() - 1;
+
+    while lo <= hi && target >= arr[lo] && target <= arr[hi] {
+        let pos = lo + ((target - arr[lo]) * (hi - lo) as i32 / (arr[hi] - arr[lo])) as usize;
+
         if arr[pos] == target {
             return Some(pos);
-        } else if arr[pos] < target {
-            left = pos + 1;
+        }
+
+        if arr[pos] < target {
+            lo = pos + 1;
         } else {
-            right = pos - 1;
+            hi = pos - 1;
         }
     }
-    
+
     None
 }
