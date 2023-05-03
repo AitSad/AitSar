@@ -5,7 +5,7 @@
 <img align="right" height=150 src="https://github.com/AitzazImtiaz/Public-Images/blob/main/ezgif-1-ebb07e4038.gif">
 
 
-This library implements algorithms faster then the binary search algorithm, and is dedicated to Sir Nisar, from the BMI faculty planned on 7 April to be released on 27 April of 2023 and publicly available by 28 April. The module library can be imported as crate in rust by including this snippet in your `Cargo.toml` file:
+This library implements algorithms faster than the binary search algorithm, and is dedicated to Sir Nisar, from the BMI faculty planned on 7 April to be released on 27 April of 2023 and publicly available by 28 April. The module library can be imported as crate in rust by including this snippet in your `Cargo.toml` file:
 
 ```rust
 [dependencies]
